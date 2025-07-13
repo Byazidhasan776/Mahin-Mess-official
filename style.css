@@ -1,0 +1,51 @@
+
+body {
+  background: linear-gradient(to right, #87CEEB, #e0f7fa);
+  font-family: Arial, sans-serif;
+}
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, red, orange, yellow, green, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slide 5s linear infinite;
+}
+.credit {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.8rem;
+  color: #555;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+input {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  padding: 8px;
+}
+.notice-title {
+  color: red;
+  animation: slideLeft 4s linear infinite;
+}
+.message-title {
+  color: yellow;
+}
+@keyframes slide {
+  0% {background-position: 0%;}
+  100% {background-position: 100%;}
+}
+@keyframes slideLeft {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(-100%);}
+}

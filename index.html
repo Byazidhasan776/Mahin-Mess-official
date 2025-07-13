@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahin Mess</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="title" onclick="tapTitle()">WELCOME MAHIN MESS</h1>
+  <p class="credit">made by BYAZID</p>
+  <input id="monthName" placeholder="Month Name eg: July 2025" />
+  <table>
+    <thead>
+      <tr>
+        <th>ছবি</th>
+        <th>নাম</th>
+        <th>রুম ভাড়া</th>
+        <th>মিল</th>
+        <th>খালার টাকা</th>
+        <th>কারেন্ট বিল</th>
+        <th>খড়ির টাকা</th>
+        <th>জরিমানা</th>
+        <th>ফোন</th>
+        <th>বাকী</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody id="members-table">
+    </tbody>
+  </table>
+
+  <div id="admin-panel" style="display:none;">
+    <button onclick="addMember()">➕ Add Member</button>
+    <button onclick="saveData()">💾 Save</button>
+  </div>
+
+  <h2 class="notice-title">NOTICE</h2>
+  <div class="notice-box" contenteditable="false" id="noticeBox"></div>
+
+  <h2 class="message-title">MESSAGE</h2>
+  <div class="message-box" contenteditable="false" id="messageBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
